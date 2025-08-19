@@ -4,6 +4,7 @@ import com.ms.demo.demo.business.dto.ClientDto;
 import com.ms.demo.demo.business.service.ClientService;
 import com.ms.demo.demo.persistence.model.Client;
 import jakarta.validation.Valid;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -14,6 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("api/clients")
 @Validated
+@Slf4j
 public class ClientController {
     private final ClientService clientService;
 
@@ -23,6 +25,9 @@ public class ClientController {
 
     @GetMapping()
     public ResponseEntity<List<Client>> list() {
+        log.info("---- Test info Logger +++++");
+        log.debug("---- Test debug Logger +++++");
+        log.error("---- Test error Logger +++++");
         return new ResponseEntity<>(clientService.list(), HttpStatus.OK);
     }
 

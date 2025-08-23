@@ -27,7 +27,7 @@
 
         <Socket name="socket" host="${sys:logstash.host.name:-localhost}" port="${sys:logstash.port.number:-9999}"
                 reconnectionDelayMillis="5000">
-            <PatternLayout pattern="${defaultPattern}"/>
+            <PatternLayout pattern="${logStashPattern}"/>
         </Socket>
     </Appenders>
 

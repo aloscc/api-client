@@ -7,7 +7,6 @@ import java.util.List;
 
 public interface ClientService {
     List<Client> list();
-
     Client create(ClientDto clientDto);
 
     double ageAverage();

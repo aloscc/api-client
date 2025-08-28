@@ -1,0 +1,106 @@
+[[32mINFO [m] 2025-08-28 13:03:28,121 Version.<clinit>() -
+            HV000001: Hibernate Validator 8.0.2.Final
+[[32mINFO [m] 2025-08-28 13:03:28,368 DemoApplication.logStarting() -
+            Starting DemoApplication using Java 17.0.7 with PID 28650 (/home/zeta/Development/Java/api-client/target/classes started by zeta in /home/zeta/Development/Java/api-client)
+[[32mINFO [m] 2025-08-28 13:03:28,377 DemoApplication.logStartupProfileInfo() -
+            The following 1 profile is active: "dev"
+[[32mINFO [m] 2025-08-28 13:03:30,827 RepositoryConfigurationDelegate.registerRepositoriesIn() -
+            Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[[32mINFO [m] 2025-08-28 13:03:30,967 RepositoryConfigurationDelegate.registerRepositoriesIn() -
+            Finished Spring Data repository scanning in 122 ms. Found 1 JPA repository interface.
+[[32mINFO [m] 2025-08-28 13:03:32,133 TomcatWebServer.initialize() -
+            Tomcat initialized with port 8080 (http)
+[[32mINFO [m] 2025-08-28 13:03:32,159 Http11NioProtocol.log() -
+            Initializing ProtocolHandler ["http-nio-8080"]
+[[32mINFO [m] 2025-08-28 13:03:32,166 StandardService.log() -
+            Starting service [Tomcat]
+[[32mINFO [m] 2025-08-28 13:03:32,182 StandardEngine.log() -
+            Starting Servlet engine: [Apache Tomcat/10.1.42]
+[[32mINFO [m] 2025-08-28 13:03:32,439 [/].log() -
+            Initializing Spring embedded WebApplicationContext
+[[32mINFO [m] 2025-08-28 13:03:32,450 ServletWebServerApplicationContext.prepareWebApplicationContext() -
+            Root WebApplicationContext: initialization completed in 3958 ms
+[[32mINFO [m] 2025-08-28 13:03:32,765 LogHelper.logPersistenceUnitInformation() -
+            HHH000204: Processing PersistenceUnitInfo [name: default]
+[[32mINFO [m] 2025-08-28 13:03:32,837 Version.logVersion() -
+            HHH000412: Hibernate ORM core version 6.6.18.Final
+[[32mINFO [m] 2025-08-28 13:03:32,893 RegionFactoryInitiator.initiateService() -
+            HHH000026: Second-level cache disabled
+[[32mINFO [m] 2025-08-28 13:03:33,348 SpringPersistenceUnitInfo.addTransformer() -
+            No LoadTimeWeaver setup: ignoring JPA class transformer
+[[32mINFO [m] 2025-08-28 13:03:33,438 HikariDataSource.getConnection() -
+            HikariPool-1 - Starting...
+[[32mINFO [m] 2025-08-28 13:03:33,730 HikariPool.checkFailFast() -
+            HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[[32mINFO [m] 2025-08-28 13:03:33,738 HikariDataSource.getConnection() -
+            HikariPool-1 - Start completed.
+[[33mWARN [m] 2025-08-28 13:03:33,782 deprecation.constructDialect() -
+            HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[[32mINFO [m] 2025-08-28 13:03:33,827 pooling.logConnectionInfo() -
+            HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[[32mINFO [m] 2025-08-28 13:03:34,986 JtaPlatformInitiator.initiateService() -
+            HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[[32mINFO [m] 2025-08-28 13:03:35,063 LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory() -
+            Initialized JPA EntityManagerFactory for persistence unit 'default'
+[[32mINFO [m] 2025-08-28 13:03:35,488 QueryEnhancerFactory.<clinit>() -
+            Hibernate is in classpath; If applicable, HQL parser will be used.
+[[33mWARN [m] 2025-08-28 13:03:37,610 JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor() -
+            spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[[33mWARN [m] 2025-08-28 13:03:37,996 UserDetailsServiceAutoConfiguration.getOrDeducePassword() -
+            
+
+Using generated security password: a3ddc78e-e294-4fde-8f1c-6966d355a61a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[[32mINFO [m] 2025-08-28 13:03:38,010 InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure() -
+            Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[[33mWARN [m] 2025-08-28 13:03:38,191 WebSecurity.performBuild() -
+            You are asking Spring Security to ignore Deferred [Mvc [pattern='/swagger-ui/**'], Ant [pattern='/swagger-ui/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[[33mWARN [m] 2025-08-28 13:03:38,194 WebSecurity.performBuild() -
+            You are asking Spring Security to ignore Deferred [Mvc [pattern='/v3/api-docs*/**'], Ant [pattern='/v3/api-docs*/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[[33mWARN [m] 2025-08-28 13:03:38,194 WebSecurity.performBuild() -
+            You are asking Spring Security to ignore Deferred [Mvc [pattern='/api-docs*'], Ant [pattern='/api-docs*']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[[32mINFO [m] 2025-08-28 13:03:38,622 H2ConsoleAutoConfiguration.log() -
+            H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[[32mINFO [m] 2025-08-28 13:03:38,788 Http11NioProtocol.log() -
+            Starting ProtocolHandler ["http-nio-8080"]
+[[32mINFO [m] 2025-08-28 13:03:38,810 TomcatWebServer.start() -
+            Tomcat started on port 8080 (http) with context path '/'
+[[32mINFO [m] 2025-08-28 13:03:38,832 DemoApplication.logStarted() -
+            Started DemoApplication in 11.847 seconds (process running for 13.513)
+[[32mINFO [m] 2025-08-28 13:04:41,750 [/].log() -
+            Initializing Spring DispatcherServlet 'dispatcherServlet'
+[[32mINFO [m] 2025-08-28 13:04:41,751 DispatcherServlet.initServletBean() -
+            Initializing Servlet 'dispatcherServlet'
+[[32mINFO [m] 2025-08-28 13:04:41,756 DispatcherServlet.initServletBean() -
+            Completed initialization in 5 ms
+[[1;31mERROR[m] 2025-08-28 13:04:43,348 GlobalExceptionHandler.handleAllOtherExceptions() -
+            java.io.IOException: Broken pipe
+[[33mWARN [m] 2025-08-28 13:04:43,370 ExceptionHandlerExceptionResolver.doResolveHandlerMethodException() -
+            Failure in @ExceptionHandler com.ms.demo.demo.exception.GlobalExceptionHandler#handleAllOtherExceptions(Exception)
+365[[1;31mERROR[m] 2025-08-28 13:04:43,523 GlobalExceptionHandler.handleAllOtherExceptions() -
+            java.io.IOException: Broken pipe
+[[33mWARN [m] 2025-08-28 13:04:43,524 ExceptionHandlerExceptionResolver.doResolveHandlerMethodException() -
+            Failure in @ExceptionHandler com.ms.demo.demo.exception.GlobalExceptionHandler#handleAllOtherExceptions(Exception)
+365[[32mINFO [m] 2025-08-28 13:05:05,471 ClientController.list() -
+            ---- Test info Logger +++++
+[[1;31mERROR[m] 2025-08-28 13:05:05,472 ClientController.list() -
+            ---- Test error Logger +++++
+[[32mINFO [m] 2025-08-28 13:05:38,424 GracefulShutdown.shutDownGracefully() -
+            Commencing graceful shutdown. Waiting for active requests to complete
+[[32mINFO [m] 2025-08-28 13:05:38,429 GracefulShutdown.doShutdown() -
+            Graceful shutdown complete
+[[32mINFO [m] 2025-08-28 13:05:38,438 LocalContainerEntityManagerFactoryBean.destroy() -
+            Closing JPA EntityManagerFactory for persistence unit 'default'
+[[32mINFO [m] 2025-08-28 13:05:38,441 HikariDataSource.close() -
+            HikariPool-1 - Shutdown initiated...
+[[32mINFO [m] 2025-08-28 13:05:38,447 HikariDataSource.close() -
+            HikariPool-1 - Shutdown completed.
